@@ -1,11 +1,11 @@
-# Urban Grocers API Testing
+# Urban Grocers API
 
-## Description
+## Descripción
 Este proyecto contiene pruebas automatizadas para la API de Urban Grocers, específicamente para el endpoint encargado de crear kits para un usuario.
 
 El objetivo es validar distintos escenarios de entrada para el campo "name" y comprobar si la API se comporta de acuerdo con la documentación.
 
-## What is tested
+## Qué se está probando
 Se cubren los siguientes escenarios:
 
 - Nombre válido con 1 carácter
@@ -17,21 +17,19 @@ Se cubren los siguientes escenarios:
 - Valores numéricos como texto
 - Falta del parámetro "name"
 - Tipo de dato incorrecto (número en lugar de string)
-
-Algunas pruebas pueden fallar, ya que la API no valida correctamente ciertos casos según lo esperado.
-
-## Technologies used
+  
+## Qué se usó
 - Python
 - Pytest
 - Requests
 
-## How to run the tests
+## Cómo correr los tests
 1. Instalar dependencias: 
 pip install pytest requests
 2. Ejecutar las pruebas:
 pytest create_kit_name_kit_test.py
 
-## Project structure
+## Estructura del proyecto
 - configuration.py → URLs y endpoints de la API
 - data.py → Cuerpos de las solicitudes
 - sender_stand_request.py → Funciones para enviar requests
